@@ -15,6 +15,6 @@ def newDeploy(ip,appname)
 
 def newTest(workspace)
 {
-  
+  echo "${workspace}"
   sh "java -jar /home/ubuntu/.jenkins/workspace/"${workspace}"/testing.jar"
 }
